@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Feel free to contact us about our Greek adventure"/>
+    <link href="styles.css" rel ="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Ms+Madi&display=swap" rel="stylesheet">
+    <title>Greeking out | Contact us</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/greekingoutlogo.jpg" alt="logo saying Greeking out - from isle to isle with pink bougainvillea flowers"></a>
+    </header>
+    <main>
+        <h1>Contact us</h1>
+        <form id="contactForm">
+            <div>
+                <label>
+                    Full name
+                    <input name ="fullname" id="fullName" placeholder="Full name" />
+                </label>
+                <div class="form-error" id="fullNameError">Full name is required</div>
+            </div>
+
+            <div>
+                <label>
+                    Enter e-mail
+                    <input name="email" id="email" placeholder="E-mail" />
+                </label>
+                <div class="form-error" id="emailError">Please enter a valid e-mail address</div>
+            </div>
+            <div>
+                <label>
+                    Subject
+                    <input name="subject" id="subject" placeholder="Subject"/>
+                </label>
+                <div class="form-error" id="subjectError">Minimum length of 15 characters</div>
+            </div>
+            <div>
+                <label>
+                    Enter message
+                    <input name="message" id="message" placeholder="Please enter your message"/>
+                </label>
+                <div class="form-error" id="messageError"> Message must be a minimum length of 25 characters</div>
+            </div>
+            <button>Send</button>
+        </form>
+        <script src="/formscript.js"></script>
+    </main>
+    <footer>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Get in touch</a>
+    Copyright ©
+    </footer>
+</body>
+</html>

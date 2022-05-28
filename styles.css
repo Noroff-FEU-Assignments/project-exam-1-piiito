@@ -1,0 +1,376 @@
+body{
+font-family: 'Livvic medium', sans-serif;
+margin: 0px;
+width: 100%;
+min-height: 100%;
+text-align: center;
+}
+
+body a{
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+  }
+  
+  header {
+    grid-area: header;
+    box-shadow: 2px 2px 3px lightgrey;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+
+  header Img {
+    max-width: 75%;
+   
+  }
+
+  Img{
+      max-width: 100%;;
+  }
+
+  h1{
+    font-family: "Livvic ExtraLight";
+    font-size: 22px;
+    font-weight: 200;
+    font-style: italic;
+    color:black;
+  }
+
+  .more_posts_button, .all_posts_button, .back_button{
+      padding: 10px 25px;
+      background-color: #0EDBD4;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1rem;
+  }
+
+  footer{
+    background-color: #0EDBD4;
+    text-align: center;
+    padding-bottom: 80px;
+    position: relative;
+    margin-top: 50px;
+    display: grid;
+    color: white;
+  }
+
+  footer a{
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    text-shadow: grey;
+  }
+
+  footer a:first-child{
+    margin: 30px 0 10px;
+  }
+
+  footer a:nth-last-of-type(){
+      margin-bottom: 30px;
+  }
+
+/*font-family: 'Ms Madi', cursive;*/
+
+/* Home page */
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+.home_container{
+    display: flex;
+    justify-content: center;
+}
+.slide{
+    transition: all 0.2ms ease-in-out;
+    /*position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items:center;*/
+}
+
+.carousel_posts{
+    /* width: 80vw;
+    margin: 0 auto;
+    height: 40vh;
+    max-width: 80rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 4rem; */
+    display: flex;
+    flex-grow: 1;
+    margin: 0 5px;
+    transition: transform 200ms ease-in-out;
+    /* overflow: hidden;
+    position: absolute; */
+}
+    /*transform: translateX(calc(var(--slider-index) * 100));
+    --items-per-screen: 4;
+    --slider-index: 0;*/
+    
+
+.slide a{
+    height: 150px;
+}
+.carousel_posts h2{
+    color: black;
+    font-family: 'Ms Madi', cursive;
+}
+
+.carousel_posts div{
+    display: flex;
+    flex: 0 0 25%;
+}
+
+.slide IMG{
+    display: block;
+    flex: 0 0 25%;
+    height: auto;
+    width: 100%;
+    padding: 5px;
+    aspect-ratio: 16/9;
+}
+
+.carousel_posts > div > a > img.wp-block-image.alignwide.size-full, .carousel_posts p, .carousel_posts h2, .carousel_posts > a:last-of-type{
+    display: none;
+}
+
+
+h2.title{
+    color: black;
+    display: block;
+    font-family: 'Ms Madi', cursive;
+    margin-bottom: 2px;
+}
+
+.button_container{
+   margin: 180px 0px 20px;
+
+}
+.arrow_button_back, .arrow_button_forward{
+    align-self: center;
+    background-color: black;
+    color:white;
+    border: none;
+    height: 30px;
+    width: 80px;
+    z-index: 10;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+    font-family: 'Livvic medium', sans-serif;;
+}
+
+.map{
+    margin-top: 30px;
+}
+
+/* Contact page */
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    
+  }
+
+form{
+    text-align: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+form div, form button{
+    grid-column: 2;
+    gap: 0px;
+}
+
+form button{
+    margin: 10px 40px;
+    padding: 10px;
+    font-family: 'Livvic medium', sans-serif;
+    background-color: #f649A4;
+    color:white;
+    text-shadow: black;
+
+}
+
+#contactForm{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: left;
+
+}
+
+
+
+label{
+    text-align: left;
+    
+}
+
+
+  /* All posts page */
+  .all_posts_container{
+      margin-bottom: 40px;
+  }
+  .all_posts_container IMG{
+      width: 100%;
+      height: auto;
+  }
+
+  .all_posts_container p, .all_posts_container h2 {
+      display: none;
+  }
+
+  .all_posts_container a{
+      background-color: none;
+  }
+
+  .all_posts_container h1{
+      font-family: 'Ms Madi', cursive;
+      font-size: 2.2em;
+      margin-bottom: 0px;
+  }
+
+  figure{
+      margin: 0px;
+  }
+
+  .more_posts_button{
+      margin: 10px;
+  }
+
+  /* Spesific post page*/
+
+  .spesific_post_container h1{
+        font-family: 'Ms Madi', cursive;
+        font-size: 3em;
+        margin: 10px 0px 0px;
+  }
+
+  .spesific_post_container h2, .spesific_post_container p{
+      text-align: left;
+      margin: 10px;
+  }
+
+  .spesific_post_container h2{
+      font-size: 1.2em;
+      margin: 20px 10px;
+  }
+
+  .spesific_post_container p{
+     font-family: 'Livvic Extralight', sans-serif;
+     margin-bottom: 80px;
+  }
+
+  .spesific_post_container IMG{
+      display: none;
+  }
+
+  .image_container h2, .image_container p{
+      display: none;
+
+
+}
+
+.image_container IMG{
+    width: 80%;
+    height: auto;
+}
+
+.image_container
+{
+  transition-duration: 0.4s;
+}
+
+.half
+{
+  transform: scale(1.25);
+}
+
+  /* About page*/
+
+  .about h1{
+    font-family: 'Livvic Light', sans-serif;
+  }
+  .about p{
+      text-align: left;
+      margin: 10px;
+      font-family: 'Livvic Extralight', sans-serif;
+  }
+
+  
+
+
+  /*tablet styles*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    header Img {
+        max-width: 65%;
+       
+      }
+    }
+
+
+
+/* Desktop styles */
+@media only screen and (min-width: 769px) {
+    main{
+        width: 80%;
+        margin: auto;
+    }
+
+    header Img {
+        max-width: 55%;
+       
+      }
+
+    .all_posts_container h1{
+        font-size: 3em;
+    }
+
+ 
+
+form div{
+    grid-column: 1/3;
+    gap: 0px;
+    text-align: right;
+}
+
+
+#contactForm{
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    
+}
+
+
+label{
+    text-align: right;
+    
+}
+    
+    }
