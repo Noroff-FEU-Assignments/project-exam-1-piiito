@@ -55,7 +55,7 @@ backButton.addEventListener('click', function(){
 function carouselFunction(){
     
     slides.forEach(function(slide){
-        slide.style.transform = `translateX(-${counter*100}%)`;
+        slide.style.transform = `translateX(-${counter*50}%)`;
     });
 }
 
