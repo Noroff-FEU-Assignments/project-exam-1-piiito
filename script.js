@@ -1,5 +1,5 @@
 const detailPage = document.querySelector(".all_posts_container");
-const mainUrl = "http://localhost/flower-power/wp-json/wp/v2/posts/";
+const mainUrl = "https://sunnyflowers.site/flower-power/wp-json/wp/v2/posts/";
 
 /* const detailPage = document.querySelector(".bodøraincoat");*/
 const queryString = document.location.search;

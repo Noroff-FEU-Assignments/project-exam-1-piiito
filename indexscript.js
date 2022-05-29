@@ -1,5 +1,5 @@
 const carousel = document.querySelector(".carousel_posts");
-const mainUrl = "http://localhost/flower-power/wp-json/wp/v2/posts/";
+const mainUrl = "https://sunnyflowers.site/flower-power/wp-json/wp/v2/posts/";
 const queryString = document.location.search;
 let params = new URLSearchParams(queryString);
 const id = params.get("id");
