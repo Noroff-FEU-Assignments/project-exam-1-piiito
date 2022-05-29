@@ -59,6 +59,7 @@ body {
       color: white;
       text-transform: uppercase;
       font-size: 1rem;
+      transition: 2ms ease-in-out;
   }
 
   footer{
@@ -75,6 +76,10 @@ body {
     color: #613A00;
     text-transform: capitalize;
     margin-bottom: 30px;
+  }
+
+  footer a:hover{
+      color:white;;
   }
 
   footer a:first-child{
@@ -154,6 +159,12 @@ h2.title{
     font-size: 0.8em;
     margin-bottom: 30px;
     font-family: 'Livvic medium', sans-serif;;
+    transition: 2ms ease-in-out;
+}
+
+.arrow_button:hover, .arrow_button_forward:hover, .all_posts_button:hover, .back_button:hover, .more_posts_button:hover, button:hover{
+    background-color: #0EDBD4;
+    transition: 2ms ease-in-out;
 }
 
 .map{
@@ -247,7 +258,7 @@ label{
     max-width: 600px;
     margin: 0 auto;
   }
-  
+
   .spesific_post_container h1{
         font-family: 'Ms Madi', cursive;
         font-size: 3em;
@@ -302,6 +313,8 @@ label{
       text-align: left;
       margin: 10px;
       font-family: 'Livvic Extralight', sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
   }
   
   /* Mobile styles*/
