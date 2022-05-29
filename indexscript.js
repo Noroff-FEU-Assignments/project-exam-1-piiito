@@ -1,6 +1,6 @@
 const carousel = document.querySelector(".carousel_posts");
 const cors = "https://noroffcors.herokuapp.com/";
-const mainUrl = cors + "https://sunnyflowers.site/flower-power/wp-json/wp/v2/posts/";
+const mainUrl = "https://sunnyflowers.site/greekingout/wp-json/wp/v2/posts/";
 const queryString = document.location.search;
 let params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -40,6 +40,7 @@ async function getProducts(carouselUrl){
 }
 
 getProducts(mainUrl);
+
 
 /*async function productDetails(){
     try{
