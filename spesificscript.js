@@ -1,6 +1,7 @@
 const detailPage = document.querySelector(".spesific_post_container");
 const imageResize = document.querySelector(".image_container");
-const mainUrl = "https://sunnyflowers.site/flower-power/wp-json/wp/v2/posts/";
+const cors = "https://noroffcors.herokuapp.com/";
+const mainUrl = cors + "https://sunnyflowers.site/greekingout/wp-json/wp/v2/posts/";
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
