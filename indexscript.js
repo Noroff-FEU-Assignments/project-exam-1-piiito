@@ -53,9 +53,9 @@ backButton.addEventListener('click', function(){
 });
 
 function carouselFunction(){
-
+    
     slides.forEach(function(slide){
-        slide.style.transform = `translateX(-${counter*50}%)`;
+        slide.style.transform = `translateX(-${counter*100}%)`;
     });
 }
 

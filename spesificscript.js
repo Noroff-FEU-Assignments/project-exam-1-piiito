@@ -40,5 +40,3 @@ function createHtml(details){
 imageResize.addEventListener("click", function(){
     this.classList.toggle("half");
 })
-
-/*document.body.onclick*/

@@ -49,9 +49,9 @@ body {
     color:black;
   }
 
-  /* .home{
+.home{
     overflow: hidden;
-  } */
+  } 
 
   .more_posts_button, .all_posts_button, .back_button{
       padding: 10px 25px;
@@ -142,10 +142,7 @@ h2.title{
     margin-bottom: 2px;
 }
 
-.button_container{
-   
 
-}
 .arrow_button_back, .arrow_button_forward{
     align-self: center;
     background-color: black;
@@ -246,6 +243,11 @@ label{
 
   /* Spesific post page*/
 
+  .spesific_post_container{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
   .spesific_post_container h1{
         font-family: 'Ms Madi', cursive;
         font-size: 3em;
@@ -309,10 +311,17 @@ label{
         display: flex;
         flex: 0 0 50%;
     }
+    .carousel_posts{
+        margin-bottom: 40px;
+    }
+    .button_container{
+        margin-top: 20px;
+    }
+    
 
     
   }
-
+ 
 
   /*tablet styles*/
 
@@ -321,6 +330,12 @@ label{
         max-width: 65%;
        
       }
+      .carousel_posts{
+        margin-bottom: 10px;
+    }
+    .button_container{
+        margin-top: 0px;
+    }
     }
 
 
@@ -342,8 +357,10 @@ label{
     }
 
     .carousel_posts{
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
+
+    
  
 
 form div{
